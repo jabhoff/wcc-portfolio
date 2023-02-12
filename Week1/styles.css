@@ -1,4 +1,5 @@
 h1{
+    font-family:Arial, Helvetica, sans-serif;
     font-size: 30px;
     color : yellow !important;
     text-align: left;
@@ -8,24 +9,39 @@ a{
 }
 
 .wiki{
-    color: royalblue;
+    color: whitesmoke;
     font-style:oblique;
     font-weight:bold;
     
 }
 
+.rainbow{
+    font-family:fantasy;
+    font-size: 25px;
+    color: transparent;
+    text-align: center;
+    letter-spacing: 15px;
+    -webkit-text-stroke: 1px;
+    -webkit-text-stroke-color: black;
+}
 .saw{
     color: black;
 }
 
 h2{ 
-    font-size: 50px;
+    /* background-color : black; */
+    font-family:fantasy;
+    font-size: 150px;
+    color: transparent;
     text-align: center;
-    letter-spacing: 25px;
+    letter-spacing: 50px;
+    -webkit-text-stroke: 1px;
+    -webkit-text-stroke-color: black;
 }
 
 h3{
     text-align: right;
+    
 }
 
 
@@ -38,6 +54,39 @@ body{
     background:linear-gradient(90deg, Red, Orange, Yellow, Green, Blue, Indigo,violet);
   }
 
-.r{
+.myHeart{
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-weight:bold;
     color : red;
+    font-size: 30px;
+    -webkit-text-stroke: 1px;
+    -webkit-text-stroke-color: black;
+    line-height: 200%;
+}
+.first{
+    font-family:'Courier New', Courier, monospace;
+}
+.middle{
+    font-family:'Times New Roman', Times, serif;
+    text-align: center;
+    line-height: 200%;
+}
+
+.end{
+    text-align: right;
+    line-height: 200%;
+}
+.I{
+    font-family:Arial, Helvetica, sans-serif;
+    font-size: 30px;
+    color: black;
+}
+
+.sky{
+    font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-size: 25px;
+    color:transparent;
+    -webkit-text-stroke: 1px;
+    /* -webkit-text-stroke-color: skyblue; */
+
 }
