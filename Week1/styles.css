@@ -2,7 +2,7 @@ h1{
     font-family:Arial, Helvetica, sans-serif;
     font-size: 30px;
     color : yellow !important;
-    text-align: left;
+    /* text-align: left; */
 }
 a{
     text-decoration: none;
@@ -52,6 +52,7 @@ h3{
 
 body{
     background:linear-gradient(90deg, Red, Orange, Yellow, Green, Blue, Indigo,violet);
+    margin: 0;
   }
 
 .myHeart{
@@ -89,4 +90,26 @@ body{
     -webkit-text-stroke: 1px;
     /* -webkit-text-stroke-color: skyblue; */
 
+}
+
+p{
+    font-size: 16px;
+}
+
+header{
+    padding:0 3%;
+}
+
+main{
+    width:100%;
+    max-width:1400px; /* means it won't be larger than 1200px on larger screens */
+    box-sizing: border-box;
+    margin: 0 auto;
+    padding: 3%;
+
+}
+
+footer{
+    width:100%;
+    min-height:100px;
 }

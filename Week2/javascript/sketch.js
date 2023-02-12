@@ -1,21 +1,23 @@
 let canvas;
 let button;
 let slider;
-
 let displayState = 0;
+let button1;
 
 function setup() {
   canvas = createCanvas(windowWidth, windowHeight, WEBGL);
   canvas.parent("sketch-container"); //move our canvas inside this HTML element
 
   createEasyCam();
-
   addGUI();
+
+
 }
 
 function draw() {
-  background(200,200,250);
+  background(100);
   
+
   noStroke();
   lights();
   ambientMaterial(slider.value(), 0, 100);
@@ -43,6 +45,8 @@ function addGUI()
   }else if(displayState == 1){
       button = createButton("Change to Circle");
   }
+
+
 
   button.addClass("button");
 
