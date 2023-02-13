@@ -18,30 +18,32 @@ function setup() {
 }
 
 function draw() {
-  background(100);
+  background(0);
   
 
   noStroke();
   lights();
-  ambientMaterial(slider.value(), 0, 100);
+  ambientMaterial(slider.value(), random(100,255), random(100,255));
 
   if(displayState == 0){
-    sphere(100);
+    sphere(80);
   }else{
-    box(100);
+    sphere(60);
   }
 
   if(displayState1 == 0){
-    torus(100,50);
+    torus(100,10);
   }else{
-    cone(100,100);
+    rotateX(millis() / 1000);
+    rotateY(millis() / 1000);
+    torus(100,10);
   }
 }
 
 function addGUI()
 {
   //add a slider
-  slider = createSlider(0, 200, 50);
+  slider = createSlider(0, 255, 100);
   slider.addClass("slider");
   //Add the slider to the parent gui HTML element
   slider.parent("gui-container");
@@ -50,16 +52,16 @@ function addGUI()
   //add a button
   if(displayState == 0)
   {
-      button = createButton("Change to Square");
+      button = createButton("Smaller");
   }else if(displayState == 1){
-      button = createButton("Change to Circle");
+      button = createButton("Bigger");
   }
 
   if(displayState1 == 0)
   {
-      button1 = createButton("Change to Torus");
+      button1 = createButton("Live");
   }else if(displayState1 == 1){
-      button1 = createButton("Change to Cone");
+      button1 = createButton("Dead");
   }
 
 
@@ -93,9 +95,9 @@ function handleButtonPress()
 
   if(displayState == 0)
   {
-      button.html("Change to Square");
+      button.html("Smaller");
   }else if(displayState == 1){
-      button.html("Change to Circle");
+      button.html("Bigger");
   }
 }
 
@@ -112,9 +114,9 @@ function handleButtonPress1()
 
   if(displayState1 == 0)
   {
-      button1.html("Change to Torus");
+      button1.html("Live");
   }else if(displayState1 == 1){
-      button1.html("Change to Cone");
+      button1.html("Dead");
   }
 }
 
