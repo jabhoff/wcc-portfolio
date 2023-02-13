@@ -77,6 +77,33 @@ footer{
     background-image: url(../assets/images/custom-image-name.jpeg); 
 } */
 
+.flex-item a#tt{
+    background-image: url(../source/DSC01357.JPG); /*change the image to one of you choice */
+}
+
+.flex-item a#wc{
+    background-image: url(../source/workshop.png); /*change the image to one of you choice */
+}
+
+.flex-item a#mr{
+    background-image: url(../source/mr.png); /*change the image to one of you choice */
+}
+
+.flex-item a#ed{
+    background-image: url(../source/edit.png); /*change the image to one of you choice */
+}
+
+.flex-item a#rain{
+    background-image: url(../source/rain.png) /*change the image to one of you choice */
+}
+
+.flex-item a#space{
+    background-image: url(../source/space.png) /*change the image to one of you choice */
+}
+
+.flex-item a#gener{
+    background-image: url(../source/generator.png) /*change the image to one of you choice */
+}
 
 .flex-item a:hover{
     color:#bbbbbb;
