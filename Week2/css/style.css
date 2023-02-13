@@ -48,6 +48,20 @@ main{
   min-width: 200px;
   cursor: pointer;
 }
+
+.button1{
+  background-color: #371bd3;
+  border: solid 1px #371bd3;
+  border-radius: 10px;
+  color: white;
+  padding: 15px 20px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  min-width: 200px;
+  cursor: pointer;
+}
 .button:hover{
   background-color:white;
   color: #371bd3;
